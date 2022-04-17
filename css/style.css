@@ -1,2 +1,67 @@
-h1 {
-  color: red; }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 9rem;
+  width: 100%;
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(128, 128, 128, 0.6)); }
+  .nav__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    @media only screen and (min-width: 425px) and (max-width: 1000px) {
+      .nav__container {
+        width: 90%; } }
+  .nav__logo {
+    font-family: "Beau Rivage", cursive, sans-serif;
+    letter-spacing: 4px;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    background-image: linear-gradient(to left, gold, white);
+    -webkit-background-clip: text;
+    color: transparent; }
+    @media only screen and (min-width: 700px) and (max-width: 1000px) {
+      .nav__logo {
+        font-size: 3rem; } }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 2rem; }
+  .nav a {
+    font-family: "Merienda", cursive;
+    padding: 0 1rem;
+    font-size: 2.5rem;
+    color: #000;
+    text-decoration: none; }
+  .nav__btn {
+    border: none;
+    background: none; }
+  .nav .fa {
+    background-image: linear-gradient(to left, gold, white);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3rem; }
+    @media only screen and (min-width: 700px) and (max-width: 1000px) {
+      .nav .fa {
+        font-size: 3.5rem; } }
