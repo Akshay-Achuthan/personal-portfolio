@@ -42,16 +42,20 @@ body {
     max-width: 1200px;
     width: 100%;
     height: 100%;
-    position: relative; }
-  .nav__logo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .nav .fa-solid {
     float: left;
-    width: 40%;
-    height: 100%;
+    height: 70%;
+    padding: 2rem;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to left, #ffd89b, #fff);
-    -webkit-background-clip: text;
-    color: transparent; }
+    color: #19547b;
+    background-color: #ffd89b;
+    border-radius: 50%; }
   .nav #nav-toggle {
     position: absolute;
     top: -100px; }
@@ -61,7 +65,8 @@ body {
     height: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center;
+    z-index: 999; }
     .nav__links a {
       display: block;
       padding: 1rem;
@@ -103,7 +108,7 @@ body {
       height: auto;
       flex-direction: column;
       overflow: hidden;
-      background-image: linear-gradient(to right, rgba(255, 216, 155, 0.8), rgba(255, 255, 255, 0.5));
+      background-image: linear-gradient(to right, #ffd89b, #fff);
       transition: all 0.5s ease-in-out; }
       .nav__links a {
         font-size: 2rem;
@@ -121,33 +126,91 @@ body {
     nav :checked ~ .nav__icon-burger .line:nth-child(2) {
       opacity: 0; } }
 
-.hero .box {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0;
-  background-color: #19547b;
-  color: black;
-  position: absolute;
-  left: -80%;
-  transform: translateX(35%);
-  transition: transform 3s ease; }
-
-.hero .box-1 {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 8rem 0;
-  background-color: #7598af;
-  color: black;
-  position: absolute;
-  left: -80%;
-  transform: translateX(50%);
-  transition: transform 3s ease; }
-
-.hero .box h2 {
-  font-size: 45px; }
+.hero {
+  max-width: 1200px; }
+  .hero__container {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden; }
+  .hero .box-1 {
+    width: 90%;
+    height: 70%;
+    background-color: #19547b;
+    position: absolute;
+    left: -70%;
+    transform: translateX(35%) rotate(45deg);
+    transition: transform 5s ease;
+    z-index: 1; }
+  .hero .box-3 {
+    width: 90%;
+    height: 70%;
+    background-color: #19547b;
+    position: absolute;
+    right: -70%;
+    transform: translateX(-35%) rotate(45deg);
+    transition: transform 5s ease;
+    z-index: 1; }
+  .hero .box-2 {
+    width: 80%;
+    height: 60%;
+    background-color: #ffd89b;
+    position: absolute;
+    left: -60%;
+    transform: translateX(45%) rotate(-200deg);
+    transition: transform 5s ease;
+    z-index: 2; }
+  .hero .box-4 {
+    width: 80%;
+    height: 60%;
+    background-color: #ffd89b;
+    position: absolute;
+    right: -60%;
+    transform: translateX(-45%) rotate(-200deg);
+    transition: transform 5s ease;
+    z-index: 2; }
+  .hero .box-5 {
+    width: 72%;
+    height: 40%;
+    background-color: #ffce82;
+    position: absolute;
+    left: -60%;
+    transform: translateX(45%) rotate(320deg);
+    transition: transform 5s ease;
+    z-index: 2; }
+  .hero .box-6 {
+    width: 72%;
+    height: 40%;
+    background-color: #ffce82;
+    position: absolute;
+    right: -60%;
+    transform: translateX(-45%) rotate(320deg);
+    transition: transform 5s ease;
+    z-index: 2; }
+  .hero .text {
+    color: #19547b;
+    display: inline-block;
+    font-family: "Beau Rivage", cursive;
+    font-size: 2.5rem;
+    width: 80%;
+    letter-spacing: 2px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5; }
+  .hero .text-sub {
+    color: #19547b;
+    display: inline-block;
+    letter-spacing: 1.2px;
+    font-family: "Beau Rivage", cursive;
+    font-size: 1.6rem;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 5; }
