@@ -39,10 +39,10 @@
         <i class="fa-solid fa-user-tie"></i>
         <ul class="nav__links">
           <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="My-Resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <label for="nav-toggle" class="nav__icon-burger">
           <div class="line"></div>
@@ -74,41 +74,103 @@
     <!-- ///        ABOUT ME SECTION          /// -->
     <!-- //////////////////////////////////// -->
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <div class="about-me__title">About Me</div>
       <div class="about-me__side"></div>
       <div class="about-me__side-right"></div>
       <div class="about-me__text">
-        Hey there, my name is Akshay Achuthan and i'm passionate about web
-        development. I have completed my master of science in IT from mumbai
-        university.
+        i'm a passionate web developer who really enjoy designing and developing
+        web apps.
       </div>
-      <div class="skill">
-        <h1>My Skill</h1>
+      <div class="about-me__skill">
+        <h1>My Skills</h1>
         <li>
           <h3>HTML</h3>
-          <span class="bar"><span style="width: 95%" class="html"></span></span>
+          <span class="about-me__skill-bar"
+            ><span style="width: 95%" class="html"></span
+          ></span>
         </li>
         <li>
           <h3>CSS</h3>
-          <span class="bar"><span style="width: 90%" class="css"></span></span>
+          <span class="about-me__skill-bar"
+            ><span style="width: 90%" class="css"></span
+          ></span>
         </li>
         <li>
           <h3>JAVASCRIPT</h3>
-          <span class="bar"><span style="width: 60%" class="js"></span></span>
+          <span class="about-me__skill-bar"
+            ><span style="width: 60%" class="js"></span
+          ></span>
         </li>
         <li>
           <h3>SASS</h3>
-          <span class="bar"><span style="width: 82%" class="sass"></span></span>
+          <span class="about-me__skill-bar"
+            ><span style="width: 82%" class="sass"></span
+          ></span>
         </li>
         <li>
           <h3>BOOTSTRAP</h3>
-          <span class="bar"
+          <span class="about-me__skill-bar"
             ><span class="bootstrap" style="width: 65%"></span
           ></span>
         </li>
       </div>
     </section>
+
+    <!-- //////////////////////////////////// -->
+    <!-- ///        PROJECT SECTION      /// -->
+    <!-- //////////////////////////////////// -->
+
+    <section class="project" id="project" >
+      <h1>Projects</h1>
+      <div class="project__text">
+        I am a person who love to design and develop mobile and web
+        applications.I like to showcase my work and thus, you can see my projects
+        hosted online.
+      </div>
+      <div class="project__btn-container">
+        <button class="project__btn href="#">Peek In</button>
+      </div>
+      <div class="rectangle"></div>
+    </section>
+
+    
+    <!-- //////////////////////////////////// -->
+    <!-- ///        FOOTER SECTION          /// -->
+    <!-- //////////////////////////////////// -->
+
+    <footer class="contact" id="contact">
+      <div class="contact__bottom-container">
+        <p>Connect With Me</p>
+        
+        <a href="mailto:akshay.97achuthan@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a href="https://github.com/Akshay-Achuthan" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+  
+        <a href="https://www.instagram.com/akshay_achuthan97/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>  
+        </a>
+
+        <a href="https://www.linkedin.com/in/akshay-achuthan/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>        
+        </a>
+        
+  
+  
+        <a href="https://www.youtube.com/channel/UCJYjV6KYeE_WjEeeAnmzy5w" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+  
+      </div>
+
+
+
+    </footer>
+
 
     <script src="index.js"></script>
   </body>
