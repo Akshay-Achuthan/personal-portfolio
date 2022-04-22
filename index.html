@@ -14,6 +14,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap"
       rel="stylesheet"
@@ -35,38 +38,35 @@
     <!-- ///   NAVIGATION SECTION         /// -->
     <!-- //////////////////////////////////// -->
    
-    <nav class="nav">
-      <div class="nav__container">
-        <input type="checkbox" id="nav-toggle" />
-        <i class="fa-solid fa-user-tie"></i>
-        <ul class="nav__links">
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="My-Resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <header class="header">
+      <div class="header__logo"><i class="fa-solid fa-user-tie"></i></div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li><a class="main-nav__link" href="#home">Home</a></li>
+          <li><a class="main-nav__link" href="#about-me">About Me</a></li>
+          <li><a class="main-nav__link" href="#project">Projects</a></li>
+          <li><a class="main-nav__link" href="My-Resume.pdf" target="_blank">Resume</a></li>
+          <li><a class="main-nav__link nav-cta" href="#contact">contact</a></li>
         </ul>
-        <label for="nav-toggle" class="nav__icon-burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </label>
-      </div>
-    </nav>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon name="menu" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close" class="icon-mobile-nav"></ion-icon>
+      </button>
+    </header>
+
 
     <!-- //////////////////////////////////// -->
     <!-- ///        HERO SECTION          /// -->
     <!-- //////////////////////////////////// -->
 
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero__container">
-        <div class="hero__box-1"></div>
-        <div class="hero__box-2"></div>
-        <div class="hero__box-3"></div>
-        <div class="hero__box-4"></div>
-        <div class="hero__box-5"></div>
-        <div class="hero__box-6"></div>
-
+        <div class="container-1"></div>
+        <div class="container-2"></div>
+        <div class="container-3"></div>
         <div class="hero__text"><h2>Akshay Achuthan</h2></div>
         <div class="hero__text-sub"><h2>A learning web developer</h2></div>
       </div>
