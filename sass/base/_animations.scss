@@ -1,3 +1,73 @@
+///////////////////////////////////////
+///////     HERO ANIMATION      ///////
+///////////////////////////////////////
+
+@keyframes rotate-box-1 {
+  0% {
+    left: -70%;
+  }
+
+  100% {
+    left: -70%;
+    transform: translateX(35%) rotate(45deg);
+  }
+}
+
+@keyframes rotate-box-3 {
+  0% {
+    right: -70%;
+  }
+
+  100% {
+    right: -70%;
+    transform: translateX(-35%) rotate(45deg);
+  }
+}
+
+@keyframes rotate-box-2 {
+  0% {
+    left: -60%;
+  }
+
+  100% {
+    left: -60%;
+    transform: translateX(45%) rotate(-200deg);
+  }
+}
+
+@keyframes rotate-box-4 {
+  0% {
+    right: -60%;
+  }
+
+  100% {
+    right: -60%;
+    transform: translateX(-45%) rotate(-200deg);
+  }
+}
+
+@keyframes rotate-box-5 {
+  0% {
+    left: -60%;
+  }
+
+  100% {
+    left: -60%;
+    transform: translateX(45%) rotate(320deg);
+  }
+}
+
+@keyframes rotate-box-6 {
+  0% {
+    right: -60%;
+  }
+
+  100% {
+    right: -60%;
+    transform: translateX(-45%) rotate(320deg);
+  }
+}
+
 @keyframes text-animate {
   0% {
     left: 0%;
