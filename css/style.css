@@ -428,3 +428,84 @@ body {
     .contact__bottom-container i {
       color: #19547b;
       font-size: 3.2rem; }
+
+.project-page__container {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0;
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 500px) and (max-width: 3000px) {
+    .project-page__container {
+      display: flex;
+      flex-wrap: wrap; } }
+
+.project-page__text {
+  font-family: "Merienda", cursive;
+  color: #19547b;
+  font-size: 2.7rem;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 0 1.5rem;
+  margin-top: 3rem; }
+  @media only screen and (min-width: 500px) and (max-width: 3000px) {
+    .project-page__text {
+      font-size: 3.5rem; } }
+
+.project-page .card {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  transition: all 0.5s; }
+  @media only screen and (min-width: 500px) and (max-width: 750px) {
+    .project-page .card {
+      flex: 40%;
+      margin: 0 15px; } }
+  @media only screen and (min-width: 750px) and (max-width: 1200px) {
+    .project-page .card {
+      flex: 25%;
+      margin: 0 15px; } }
+  @media only screen and (min-width: 1200px) {
+    .project-page .card {
+      flex: 20%;
+      margin: 0 15px; } }
+  .project-page .card:hover {
+    background-color: #fff;
+    transform: translateY(-5px);
+    transition: transform 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+  .project-page .card h3 {
+    font-family: "Merienda", cursive;
+    padding: 2rem 0; }
+  .project-page .card__img {
+    width: 100%; }
+  .project-page .card__link:link, .project-page .card__link:visited {
+    text-decoration: none;
+    color: white;
+    background-color: #19547b;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 10px;
+    transition: all 0.5s; }
+    @media only screen and (min-width: 500px) and (max-width: 650px) {
+      .project-page .card__link:link, .project-page .card__link:visited {
+        font-size: 1.1rem;
+        margin: 0; } }
+    @media only screen and (min-width: 750px) and (max-width: 955px) {
+      .project-page .card__link:link, .project-page .card__link:visited {
+        font-size: 1.1rem;
+        padding: 0.8rem; } }
+    @media only screen and (min-width: 1200px) {
+      .project-page .card__link:link, .project-page .card__link:visited {
+        font-size: 1.5rem;
+        padding: 0.8rem; } }
+  .project-page .card__link:hover, .project-page .card__link:active {
+    text-decoration: none;
+    color: black;
+    background-color: #ffd89b;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 10px;
+    transition: all 0.5s; }
