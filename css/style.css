@@ -145,7 +145,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 5rem; }
+  gap: 3rem; }
 
 .main-nav__link {
   padding: 1rem; }
@@ -209,7 +209,7 @@ body {
     display: none; }
     .main-nav__list {
       flex-direction: column;
-      gap: 4.8rem; }
+      gap: 3rem; }
     .main-nav__link:link, .main-nav__link:visited {
       font-size: 3rem;
       color: black; }
@@ -458,19 +458,20 @@ body {
   padding: 5rem 1.5rem;
   text-align: center;
   margin-bottom: 5rem;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  background-color: #ffd89b; }
   @media only screen and (min-width: 500px) and (max-width: 750px) {
     .project-page .card {
       flex: 40%;
-      margin: 0 15px; } }
+      margin: 0 1.5rem 5rem 1.5rem; } }
   @media only screen and (min-width: 750px) and (max-width: 1200px) {
     .project-page .card {
       flex: 25%;
-      margin: 0 15px; } }
+      margin: 0 1.5rem 5rem 1.5rem; } }
   @media only screen and (min-width: 1200px) {
     .project-page .card {
       flex: 20%;
-      margin: 0 15px; } }
+      margin: 0 1.5rem 5rem 1.5rem; } }
   .project-page .card:hover {
     background-color: #fff;
     transform: translateY(-5px);
@@ -499,7 +500,7 @@ body {
         padding: 0.8rem; } }
     @media only screen and (min-width: 1200px) {
       .project-page .card__link:link, .project-page .card__link:visited {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding: 0.8rem; } }
   .project-page .card__link:hover, .project-page .card__link:active {
     text-decoration: none;
@@ -509,3 +510,40 @@ body {
     margin: 0 0.5rem;
     border-radius: 10px;
     transition: all 0.5s; }
+
+.certificates__text {
+  font-family: "Merienda", cursive;
+  color: #19547b;
+  font-size: 5rem;
+  margin-top: 2rem;
+  text-align: center; }
+
+.certificates__container {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0; }
+  @media only screen and (min-width: 500px) {
+    .certificates__container {
+      display: flex;
+      justify-content: center; } }
+
+.certificates__card {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5rem;
+  margin-bottom: 2rem;
+  background-color: #ffd89b;
+  border-radius: 10px; }
+  @media only screen and (min-width: 500px) {
+    .certificates__card {
+      max-width: 200px;
+      padding: 2rem;
+      margin: 0 0.5rem; } }
+  .certificates__card:hover {
+    background-color: #19547b; }
+  .certificates__card a {
+    color: #000;
+    text-decoration: none; }
+    .certificates__card a:hover {
+      color: #fff; }
