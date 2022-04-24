@@ -48,3 +48,29 @@
     @content;
   }
 }
+
+// project
+
+@mixin medium-screen {
+  @media only screen and (min-width: 750px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin big-large-screen {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin tab-medium {
+  @media only screen and (min-width: 500px) and (max-width: 650px) {
+    @content;
+  }
+}
+
+@mixin tab-large {
+  @media only screen and (min-width: 750px) and (max-width: 955px) {
+    @content;
+  }
+}
