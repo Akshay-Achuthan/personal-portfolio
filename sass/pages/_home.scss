@@ -85,7 +85,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 120px) and (max-width: 950px) {
+@include phone-tab {
   .header {
     height: 6rem;
   }
@@ -239,12 +239,12 @@
     padding-bottom: 2rem;
     z-index: -1;
 
-    @media only screen and (min-width: 500px) and (max-width: 780px) {
+    @include tab {
       width: 80%;
       margin: 0 auto;
     }
 
-    @media only screen and (min-width: 780px) and (max-width: 3000px) {
+    @include desktop {
       width: 50%;
       margin: 0 auto;
     }
@@ -257,12 +257,12 @@
     padding-bottom: 4rem;
     color: $color-black;
 
-    @media only screen and (min-width: 500px) and (max-width: 780px) {
+    @include tab {
       width: 80%;
       margin: 0 auto;
     }
 
-    @media only screen and (min-width: 780px) and (max-width: 3000px) {
+    @include desktop {
       width: 50%;
       margin: 0 auto;
     }
@@ -333,12 +333,12 @@
     text-align: center;
     margin: 0 auto;
 
-    @media only screen and (min-width: 500px) and (max-width: 780px) {
+    @include tab {
       width: 80%;
       margin: 0 auto;
     }
 
-    @media only screen and (min-width: 780px) and (max-width: 3000px) {
+    @include desktop {
       width: 50%;
       margin: 0 auto;
     }
@@ -379,12 +379,12 @@
   transform: rotate(45deg);
   animation: animate 2s linear infinite;
 
-  @media only screen and (min-width: 350px) and (max-width: 500px) {
+  @include phone {
     top: 5%;
     left: -200px;
   }
 
-  @media only screen and (min-width: 500px) and (max-width: 2000px) {
+  @include big-screen {
     top: 10%;
     left: -160px;
   }
@@ -420,7 +420,7 @@
         border-bottom: 2px solid $color-secondary;
       }
 
-      @media only screen and (min-width: 320px) and (max-width: 500px) {
+      @include small-phone {
         padding: 0 1rem;
       }
     }

@@ -4,3 +4,47 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// navigation
+
+@mixin phone-tab {
+  @media only screen and (min-width: 120px) and (max-width: 950px) {
+    @content;
+  }
+}
+
+// about section
+
+@mixin tab {
+  @media only screen and (min-width: 500px) and (max-width: 780px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 780px) {
+    @content;
+  }
+}
+
+// project
+
+@mixin phone {
+  @media only screen and (min-width: 350px) and (max-width: 500px) {
+    @content;
+  }
+
+  @mixin big-screen {
+    @media only screen and (min-width: 500px) {
+      @content;
+    }
+  }
+}
+
+// contact
+
+@mixin small-phone {
+  @media only screen and (min-width: 320px) and (max-width: 500px) {
+    @content;
+  }
+}
